@@ -197,132 +197,185 @@
     </div>
 
     <script>
-        const locations = {
-            sayram: {
-                slides: [
-                    {
-                        title: "Древний Сайрам (Испиджаб)",
-                        img: "sayram_main.jpg",
-                        desc: "Один из старейших городов Казахстана, стоявший на Великом Шёлковом пути. Это место называют 'Колыбелью святых'."
-                    },
-                    {
-                        title: "Мавзолей Ибрагим-ата",
-                        img: "ibrahim_ata.jpg",
-                        desc: "Мавзолей отца Ходжи Ахмеда Яссави. Построен в XII-XIV веках. Является объектом паломничества мусульман со всего мира."
-                    },
-                    {
-                        title: "Мавзолей Карашаш-ана",
-                        img: "karashash_ana.jpg",
-                        desc: "Место упокоения матери Яссави. Карашаш-ана была символом мудрости и материнства. Архитектура мавзолея отличается изящной кладкой."
-                    }
-                ]
-            },
-            turkestan: {
-                slides: [
-                    {
-                        title: "Духовный центр - Туркестан",
-                        img: "turk_main.jpg",
-                        desc: "Город с 1500-летней историей. Столица Казахского ханства, сердце духовной жизни Центральной Азии."
-                    },
-                    {
-                        title: "Мавзолей Х. А. Яссави",
-                        img: "yassawi.jpg",
-                        desc: "Шедевр архитектуры, построенный по приказу Эмира Тимура. Высота купола — 44 метра. Входит в список наследия ЮНЕСКО."
-                    },
-                    {
-                        title: "Мавзолей Рабии Султан Бегим",
-                        img: "rabia.jpg",
-                        desc: "Усыпальница дочери знаменитого Улугбека. Расположен в непосредственной близости от главного мавзолея Яссави."
-                    }
-                ]
-            },
-            kazygurt: {
-                slides: [
-                    {
-                        title: "Гора Казыгурт",
-                        img: "kazygurt_main.jpg",
-                        desc: "Священная гора, овеянная легендами. Согласно местным преданиям, ковчег пророка Нуха (Ноя) остановился именно здесь."
-                    },
-                    {
-                        title: "Кеме Калган (Корабль)",
-                        img: "ship.jpg",
-                        desc: "Архитектурная инсталляция на вершине перевала, напоминающая о легендарном ковчеге. Отсюда открывается вид на всю долину."
-                    },
-                    {
-                        title: "Акмечеть на Казыгурте",
-                        img: "kazy_mosque.jpg",
-                        desc: "Не путать с пещерой! Это уникальное наскальное сооружение, считающееся местом силы с особой энергетикой."
-                    }
-                ]
-            }
-            // Добавь остальные точки по аналогии (arystan, sauran, appak, akmechet)
-        };
+    const locations = {
+        sayram: {
+            slides: [
+                {
+                    title: "Древний Сайрам (Испиджаб)",
+                    img: "sayram_main.jpg",
+                    desc: "Сайрам — один из древнейших городов Казахстана, возраст которого превышает 3000 лет. В эпоху Средневековья он был важнейшим экономическим и культурным узлом на Великом Шёлковом пути, заслужив почетное название «Колыбель святых»."
+                },
+                {
+                    title: "Мавзолей Ибрагим-ата",
+                    img: "ibrahim_ata.jpg",
+                    desc: "Этот архитектурный памятник XII-XIV веков возведен над могилой отца великого суфия Ходжи Ахмеда Яссави. Мавзолей является местом массового паломничества, привлекая верующих своей строгой кирпичной кладкой и мощной духовной энергетикой древности."
+                },
+                {
+                    title: "Мавзолей Карашаш-ана",
+                    img: "karashash_ana.jpg",
+                    desc: "Святыня посвящена матери Ходжи Ахмеда Яссави, которая была символом мудрости и женского благородства. Нынешнее здание построено в XIX веке на месте более древнего сооружения и восхищает изяществом форм и мастерством средневекового зодчества."
+                }
+            ]
+        },
+        arystan: {
+            slides: [
+                {
+                    title: "Мавзолей Арыстан-Баб",
+                    img: "arystan_main.jpg",
+                    desc: "Мавзолей воздвигнут над могилой учителя Ахмеда Яссави. Согласно легенде, Арыстан-Баб был сподвижником пророка Мухаммеда и передал Ахмеду священные четки. Это важнейшая святыня, которую паломники традиционно посещают перед поездкой в Туркестан."
+                },
+                {
+                    title: "Древний Отрар",
+                    img: "otrar.jpg",
+                    desc: "Рядом с мавзолеем находятся руины легендарного Отрара — города, который героически сопротивлялся войскам Чингисхана. Здесь родился великий философ Аль-Фараби, и именно здесь находилась одна из крупнейших библиотек древнего мира."
+                }
+            ]
+        },
+        turkestan: {
+            slides: [
+                {
+                    title: "Туркестан — Духовная Столица",
+                    img: "turk_main.jpg",
+                    desc: "Город с полуторатысячелетней историей, долгое время служивший столицей Казахского ханства. Туркестан признан духовным центром тюркского мира, объединяющим культурное наследие кочевников и великие достижения исламской архитектуры Средней Азии."
+                },
+                {
+                    title: "Мавзолей Ходжи Ахмеда Яссави",
+                    img: "yassawi.jpg",
+                    desc: "Грандиозное сооружение XIV века, построенное по приказу Эмира Тимура. Его огромный лазурный купол — самый большой в Центральной Азии. Мавзолей является шедевром мирового значения и включен в список Всемирного наследия ЮНЕСКО."
+                },
+                {
+                    title: "Мавзолей Рабии Султан Бегим",
+                    img: "rabia.jpg",
+                    desc: "Усыпальница дочери знаменитого ученого и правителя Улугбека. Памятник XV века расположен на территории комплекса Азрет-Султан. Его архитектура с восьмигранным основанием подчеркивает высокий статус и благородство похороненной здесь принцессы."
+                }
+            ]
+        },
+        sauran: {
+            slides: [
+                {
+                    title: "Городище Сауран",
+                    img: "sauran_main.jpg",
+                    desc: "Уникальный памятник средневековой городской культуры. Сауран был неприступной крепостью с мощными стенами и рвами. Город прославился своей уникальной системой водоснабжения — кяризами, сложными подземными каналами, которые функционировали сотни лет."
+                }
+            ]
+        },
+        appak: {
+            slides: [
+                {
+                    title: "Мечеть-медресе Аппак Ишан",
+                    img: "appak_main.jpg",
+                    desc: "Архитектурный памятник XIX века в поселке Шаян. Уникальность сооружения заключается в том, что оно построено без использования гвоздей. Внутри сохранились учебные комнаты и молельный зал, передающие атмосферу духовного образования прошлого века."
+                }
+            ]
+        },
+        akmechet: {
+            slides: [
+                {
+                    title: "Пещера Акмечеть",
+                    img: "akmechet_main.jpg",
+                    desc: "Это грандиозный природный объект, скрытый в недрах земли. Пещера имеет собственный микроклимат: здесь всегда прохладно и растут деревья, которых нет на поверхности. Легенды связывают это место с защитой воинов во время джунгарского нашествия."
+                }
+            ]
+        },
+        kazygurt: {
+            slides: [
+                {
+                    title: "Священная гора Казыгурт",
+                    img: "kazygurt_main.jpg",
+                    desc: "Гора, овеянная множеством мифов и легенд. Жители Южного Казахстана верят, что во время Всемирного потопа ковчег пророка Нуха (Ноя) причалил именно к этой вершине, сделав её символом спасения человечества и начала новой жизни."
+                },
+                {
+                    title: "Кеме Калган (Корабль)",
+                    img: "ship.jpg",
+                    desc: "На перевале горы установлена символическая инсталляция в виде летящего корабля-ковчега. Ночью сооружение подсвечивается, создавая мистический образ парящего над степью судна, напоминая путникам о древних преданиях этих святых земель."
+                }
+            ]
+        }
+    };
 
-        let currentLoc = "";
-        let currentSlide = 0;
+    let currentLoc = "";
+    let currentSlide = 0;
 
-        function openModal(id) {
-            currentLoc = id;
-            currentSlide = 0;
-            const locData = locations[id];
-            
-            if (!locData) {
-                alert("Данные для этой точки ещё пополняются!");
-                return;
-            }
-
-            renderSlides();
-            document.getElementById('overlay').style.display = 'flex';
-            updateButtons();
+    function openModal(id) {
+        currentLoc = id;
+        currentSlide = 0;
+        const locData = locations[id];
+        
+        if (!locData) {
+            alert("Данные для этой точки ещё пополняются!");
+            return;
         }
 
-        function renderSlides() {
-            const container = document.getElementById('slides-container');
-            const data = locations[currentLoc];
-            
-            container.innerHTML = data.slides.map((s, index) => `
-                <div class="slide ${index === 0 ? 'active' : ''}">
-                    <img src="${s.img}" onerror="this.src='https://via.placeholder.com/600x300?text=Нет+фото'">
-                    <h2>${s.title}</h2>
-                    <p>${s.desc}</p>
-                </div>
-            `).join('');
-            
-            updateIndicator();
-        }
+        renderSlides();
+        document.getElementById('overlay').style.display = 'flex';
+        updateButtons();
+    }
 
-        function changeSlide(direction) {
-            const slides = document.querySelectorAll('.slide');
-            slides[currentSlide].classList.remove('active');
-            
-            currentSlide += direction;
-            slides[currentSlide].classList.add('active');
-            
-            updateButtons();
-            updateIndicator();
-        }
+    function renderSlides() {
+        const container = document.getElementById('slides-container');
+        const data = locations[currentLoc];
+        
+        container.innerHTML = data.slides.map((s, index) => `
+            <div class="slide ${index === 0 ? 'active' : ''}">
+                <img src="${s.img}" onerror="this.src='https://via.placeholder.com/600x300?text=Загрузите+фото:+${s.img}'">
+                <h2>${s.title}</h2>
+                <p>${s.desc}</p>
+            </div>
+        `).join('');
+        
+        updateIndicator();
+    }
 
-        function updateButtons() {
-            const data = locations[currentLoc];
-            document.querySelector('.prev-btn').disabled = (currentSlide === 0);
-            document.querySelector('.next-btn').disabled = (currentSlide === data.slides.length - 1);
-        }
+    function changeSlide(direction) {
+        const slides = document.querySelectorAll('.slide');
+        if (slides.length === 0) return;
+        
+        slides[currentSlide].classList.remove('active');
+        currentSlide += direction;
+        slides[currentSlide].classList.add('active');
+        
+        updateButtons();
+        updateIndicator();
+    }
 
-        function updateIndicator() {
-            const data = locations[currentLoc];
-            document.getElementById('page-indicator').innerText = `${currentSlide + 1} / ${data.slides.length}`;
+    function updateButtons() {
+        const data = locations[currentLoc];
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        
+        // Скрываем стрелки, если слайд всего один
+        if (data.slides.length <= 1) {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+        } else {
+            prevBtn.style.display = 'flex';
+            nextBtn.style.display = 'flex';
+            prevBtn.disabled = (currentSlide === 0);
+            nextBtn.disabled = (currentSlide === data.slides.length - 1);
         }
+    }
 
-        function closeModal() {
-            document.getElementById('overlay').style.display = 'none';
+    function updateIndicator() {
+        const data = locations[currentLoc];
+        const indicator = document.getElementById('page-indicator');
+        if (data.slides.length <= 1) {
+            indicator.style.display = 'none';
+        } else {
+            indicator.style.display = 'block';
+            indicator.innerText = `${currentSlide + 1} / ${data.slides.length}`;
         }
+    }
 
-        window.onkeydown = (e) => {
-            if (e.key === "Escape") closeModal();
-            if (e.key === "ArrowRight" && !document.querySelector('.next-btn').disabled) changeSlide(1);
-            if (e.key === "ArrowLeft" && !document.querySelector('.prev-btn').disabled) changeSlide(-1);
-        };
-    </script>
+    function closeModal() {
+        document.getElementById('overlay').style.display = 'none';
+    }
+
+    window.onkeydown = (e) => {
+        if (e.key === "Escape") closeModal();
+        if (e.key === "ArrowRight" && !document.querySelector('.next-btn').disabled) changeSlide(1);
+        if (e.key === "ArrowLeft" && !document.querySelector('.prev-btn').disabled) changeSlide(-1);
+    };
+</script>
 </body>
 </html>
 </html>
